@@ -136,19 +136,18 @@ ai-scaffold stays small by handing off to independent packages instead of
 absorbing them. Both are runtime-only dependencies: optional, checked when
 needed, updated on their own schedule — and everything works without them.
 
-**[decision-ledger](https://github.com/Dupflo/decision-ledger)** owns
-structural decisions — data model, auth, state ownership, a dependency that
-will spread. ai-scaffold hands off to it and reads its map back into
-`/as-status`. Requires `>= 0.2.0` (`ledger --version`); absent, it says so
-exactly once.
-
-**[ainnotations](https://github.com/Dupflo/ainnotations)** is visual
-feedback on the running app: draw, highlight and comment on the page itself;
-the notes land in `annotations.md` and the agent applies them. Offered once
-at `/as-project` (`npx ainnotations init`) — and offered *first* to users
-whose craft is visual: for a designer, drawing on the screen beats
-describing it in words, and the annotate → apply → check loop is the review
-cycle made tangible.
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+<img src="assets/ledger-mini.svg" alt="Animated mini terminal: a question about cookie vs token, a hesitant answer, the signal auth/session-storage: partial recorded, and a three-bar mastery map filling up." width="340"/>
+<p align="left"><b><a href="https://github.com/Dupflo/decision-ledger">decision-ledger</a></b> owns structural decisions — data model, auth, state ownership, a dependency that will spread. ai-scaffold hands off to it and reads its map back into <code>/as-status</code>. Requires <code>&gt;= 0.2.0</code> (<code>ledger --version</code>); absent, it says so exactly once.</p>
+</td>
+<td width="50%" align="center" valign="top">
+<img src="assets/ainnotations-mini.svg" alt="Animated mini browser: a freehand red circle is drawn around a dull page header, a note says too dull, the header snaps to the right color, and 'applied from annotations.md' confirms." width="340"/>
+<p align="left"><b><a href="https://github.com/Dupflo/ainnotations">ainnotations</a></b> is visual feedback on the running app: draw, highlight and comment on the page itself; the notes land in <code>annotations.md</code> and the agent applies them. Offered once at <code>/as-project</code> (<code>npx ainnotations init</code>) — and offered <i>first</i> to users whose craft is visual: for a designer, drawing on the screen beats describing it in words, and the annotate → apply → check loop is the review cycle made tangible.</p>
+</td>
+</tr>
+</table>
 
 ## State
 

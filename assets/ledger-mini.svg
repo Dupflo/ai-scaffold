@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 170" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">
+  <style>
+    .l { opacity: 0; animation: 9s linear infinite; }
+    .m1 { animation-name: k1; } .m2 { animation-name: k2; }
+    .m3 { animation-name: k3; } .m4 { animation-name: k4; }
+    @keyframes k1 { 0%,4%{opacity:0}  8%,92%{opacity:1}  97%,100%{opacity:0} }
+    @keyframes k2 { 0%,24%{opacity:0} 28%,92%{opacity:1} 97%,100%{opacity:0} }
+    @keyframes k3 { 0%,44%{opacity:0} 48%,92%{opacity:1} 97%,100%{opacity:0} }
+    @keyframes k4 { 0%,60%{opacity:0} 64%,92%{opacity:1} 97%,100%{opacity:0} }
+    .bar { transform-origin: left; transform: scaleX(0); animation: 9s ease-out infinite; }
+    .a1 { animation-name: w1; } .a2 { animation-name: w2; } .a3 { animation-name: w3; }
+    @keyframes w1 { 0%,62%{transform:scaleX(0)} 70%,92%{transform:scaleX(0.4)} 97%,100%{transform:scaleX(0)} }
+    @keyframes w2 { 0%,66%{transform:scaleX(0)} 74%,92%{transform:scaleX(0.8)} 97%,100%{transform:scaleX(0)} }
+    @keyframes w3 { 0%,70%{transform:scaleX(0)} 78%,92%{transform:scaleX(1)}   97%,100%{transform:scaleX(0)} }
+  </style>
+
+  <rect x="0" y="0" width="340" height="170" rx="8" fill="#0d1117" stroke="#30363d"/>
+  <rect x="0" y="0" width="340" height="26" rx="8" fill="#161b22"/>
+  <rect x="0" y="18" width="340" height="8" fill="#161b22"/>
+  <circle cx="16" cy="13" r="4" fill="#ff5f57"/>
+  <circle cx="30" cy="13" r="4" fill="#febc2e"/>
+  <circle cx="44" cy="13" r="4" fill="#28c840"/>
+  <text x="170" y="17" text-anchor="middle" fill="#8b949e" font-size="10">decision-ledger</text>
+
+  <text class="l m1" x="14" y="48" fill="#e6edf3"><tspan fill="#a5a2ff">●</tspan> httpOnly cookie or token? why?</text>
+  <text class="l m2" x="14" y="68" fill="#8b949e">  › safer against XSS… I think</text>
+  <text class="l m3" x="14" y="88" fill="#3fb950">  ✓ auth/session-storage: partial</text>
+
+  <g class="l m4">
+    <text x="14"  y="116" fill="#8b949e" font-size="10">auth</text>
+    <text x="14"  y="134" fill="#8b949e" font-size="10">data</text>
+    <text x="14"  y="152" fill="#8b949e" font-size="10">ui</text>
+  </g>
+  <rect x="52" y="108" width="274" height="9" rx="2" fill="#21262d"/>
+  <rect x="52" y="126" width="274" height="9" rx="2" fill="#21262d"/>
+  <rect x="52" y="144" width="274" height="9" rx="2" fill="#21262d"/>
+  <rect class="bar a1" x="52" y="108" width="274" height="9" rx="2" fill="#d29922"/>
+  <rect class="bar a2" x="52" y="126" width="274" height="9" rx="2" fill="#7c6cf0"/>
+  <rect class="bar a3" x="52" y="144" width="274" height="9" rx="2" fill="#3fb950"/>
+</svg>
