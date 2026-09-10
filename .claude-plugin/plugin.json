@@ -1,0 +1,30 @@
+{
+  "name": "ai-scaffold",
+  "description": "Adaptive project-first learning for AI-assisted development: the agent teaches at your level, from first line of code to autonomous, while your real project ships. Eight skills: /as-setup, /as-profile, /as-project, /as-mentor, /as-lesson, /as-quiz, /as-level, /as-status.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Florian Dupuis",
+    "url": "https://github.com/Dupflo"
+  },
+  "homepage": "https://github.com/Dupflo/ai-scaffold",
+  "repository": "https://github.com/Dupflo/ai-scaffold",
+  "license": "MIT",
+  "keywords": [
+    "learning",
+    "teaching",
+    "adaptive",
+    "scaffolding",
+    "project-based-learning",
+    "beginner"
+  ],
+  "skills": [
+    "./as-setup",
+    "./as-profile",
+    "./as-project",
+    "./as-mentor",
+    "./as-lesson",
+    "./as-quiz",
+    "./as-level",
+    "./as-status"
+  ]
+}

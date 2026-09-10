@@ -1,0 +1,14 @@
+{
+  "name": "dupflo-ai-scaffold",
+  "owner": {
+    "name": "Florian Dupuis",
+    "url": "https://github.com/Dupflo"
+  },
+  "plugins": [
+    {
+      "name": "ai-scaffold",
+      "source": "./",
+      "description": "The place where \"I don't know\" makes sense. Project-first learning adapted to your real level: the agent teaches while your project ships, from never-wrote-a-line to autonomous."
+    }
+  ]
+}
