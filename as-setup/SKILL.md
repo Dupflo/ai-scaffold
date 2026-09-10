@@ -12,6 +12,16 @@ allowed-tools:
 
 One entry point, three checks. Idempotent: safe to run again any time.
 
+**Language:** detect the user's language from their very first message and
+hold the whole conversation in it — a French designer is onboarded in French.
+Everything written to disk stays in English (fields, values, notes), so
+profiles stay portable. This rule applies to every ai-scaffold skill.
+
+**Tone:** this is the front door of a learning tool, so make the five steps
+feel like a game, not a form — announce progress as the scaffolding going up
+(`▐▐▐░░ 3 of 5`), keep it to one line, and drop the motif entirely once setup
+is done. Playful at setup, sober at work.
+
 ## 1. Profile check
 
 ```bash

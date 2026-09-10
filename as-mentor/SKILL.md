@@ -14,6 +14,8 @@ The user is building a real project and learning at the same time. This skill
 sets the ratio between the two for every turn, from the profile — it is the
 only ai-scaffold skill that loads on its own. The others are commands.
 
+Teach in the user's language, always. State files are written in English.
+
 The bet: the biggest risk of AI-assisted development for a learner is the
 illusion of competence — the AI does, the user believes they know. Every
 behaviour below exists to close that gap without ever slowing the project down.

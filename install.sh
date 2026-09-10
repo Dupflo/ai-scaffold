@@ -58,7 +58,7 @@ if [ -n "${SELF_DIR:-}" ] && [ -f "$SELF_DIR/as-mentor/SKILL.md" ] && [ -f "$SEL
     if [ "$(cd "$SRC" && pwd -P)" != "$(cd "$HOME_DIR" 2>/dev/null && pwd -P || echo none)" ]; then
         rm -rf "$HOME_DIR"
         mkdir -p "$HOME_DIR"
-        (cd "$SRC" && tar cf - references $SKILLS README.md LICENSE 2>/dev/null) \
+        (cd "$SRC" && tar cf - references assets $SKILLS README.md LICENSE 2>/dev/null) \
             | (cd "$HOME_DIR" && tar xf -)
     fi
     echo "→ Installed from $SRC"
@@ -74,17 +74,26 @@ else
     fi
 fi
 
+# The scaffold rises one bar per pair of skills linked. Cosmetic, and the
+# point: the install already looks like what the tool does.
+BARS=""
+i=0
 for s in $SKILLS; do
     ln -sfn "$HOME_DIR/$s" "$DEST/$s"
+    i=$((i + 1))
+    case $i in 2|4|6|8) BARS="$BARS▐" ;; esac
+    printf "\r  raising the scaffolding %-4s /%s" "$BARS" "$s"
+    sleep 0.15 2>/dev/null || true
 done
+printf "\r%-60s\r" ""
 
 echo ""
-echo "ai-scaffold installed in $SCOPE scope ($DEST)"
+echo "  ▐▐▐▐  ai-scaffold is up — $SCOPE scope ($DEST)"
 echo ""
-echo "  /as-setup      once per machine: profile + dependency check"
+echo "  /as-setup      once per machine: five questions, a profile"
 echo "  /as-project    once per repo: goal, stack, levels, curriculum"
 echo ""
-echo "Start with /as-setup."
+echo "Start with /as-setup. It speaks your language, literally."
 echo ""
 
 # decision-ledger is a runtime dependency, checked here only to say so early;
