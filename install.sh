@@ -81,7 +81,7 @@ i=0
 for s in $SKILLS; do
     ln -sfn "$HOME_DIR/$s" "$DEST/$s"
     i=$((i + 1))
-    case $i in 2|4|6|8) BARS="$BARS▐" ;; esac
+    case $i in 2|4|6|8) BARS="${BARS}▐" ;; esac
     printf "\r  raising the scaffolding %-4s /%s" "$BARS" "$s"
     sleep 0.15 2>/dev/null || true
 done
