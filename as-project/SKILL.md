@@ -93,7 +93,23 @@ Every step must ship something visible. A learner funds their motivation with
 working software, not with completed chapters. 5–9 milestones; more means the
 slices are too thin, fewer means they're too big for the focus budget.
 
-## 5. Close
+## 5. Companion tools, offered once
+
+When the project has something to look at in a browser, offer
+[ainnotations](https://github.com/Dupflo/ainnotations) — one question,
+pitched at the user's level: *"When something looks wrong on screen, would
+you rather draw on it than describe it? I can set that up."* For a user
+whose craft is visual (designer, architect), lead with it: annotating the
+running app is their native language, and the annotate → apply → check loop
+is the method cycle made tangible.
+
+On yes: `npx ainnotations init` (installs its companion skill at project
+scope; needs Node, which the stack setup provides anyway), and record it
+under `tools:` in `project.md`. On no: record the no, never re-offer.
+Like the ledger: optional, independent package, checked at runtime —
+ai-scaffold works fine without it.
+
+## 6. Close
 
 Write the three files, then say two things only: which milestone is `current`,
 and that `/as-lesson` starts it. If `.scaffold/` is being created in a repo

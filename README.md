@@ -130,15 +130,25 @@ after. It gets a three-line explanation anchored in your code, and the
 concept comes back later — as a question you'll answer unaided, which is the
 best signal there is.
 
-## Works with decision-ledger
+## Companion tools
 
-Structural decisions — data model, auth, state ownership, a dependency that
-will spread — are [decision-ledger](https://github.com/Dupflo/decision-ledger)'s
-territory. ai-scaffold hands off to it rather than duplicating it, and reads
-its map back into `/as-status`. The dependency is runtime-only: the ledger
-stays an independent package, updating it updates what ai-scaffold uses.
-Requires ledger `>= 0.2.0` (`ledger --version`); without it everything still
-works, and says so exactly once.
+ai-scaffold stays small by handing off to independent packages instead of
+absorbing them. Both are runtime-only dependencies: optional, checked when
+needed, updated on their own schedule — and everything works without them.
+
+**[decision-ledger](https://github.com/Dupflo/decision-ledger)** owns
+structural decisions — data model, auth, state ownership, a dependency that
+will spread. ai-scaffold hands off to it and reads its map back into
+`/as-status`. Requires `>= 0.2.0` (`ledger --version`); absent, it says so
+exactly once.
+
+**[ainnotations](https://github.com/Dupflo/ainnotations)** is visual
+feedback on the running app: draw, highlight and comment on the page itself;
+the notes land in `annotations.md` and the agent applies them. Offered once
+at `/as-project` (`npx ainnotations init`) — and offered *first* to users
+whose craft is visual: for a designer, drawing on the screen beats
+describing it in words, and the annotate → apply → check loop is the review
+cycle made tangible.
 
 ## State
 

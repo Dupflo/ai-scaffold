@@ -69,6 +69,12 @@ criteria, you critique.
   profile *wants* the explanation — give the 3-line explanation in the doing,
   then record the signal exactly as `/ledger` specifies.
 - **A quiz-worthy recall moment**: leave it to `/as-quiz`. Never quiz mid-task.
+- **Visual feedback on the running app** ("the header looks wrong", "can I
+  show you?") and `project.md` has `tools: ainnotations: true`: load the
+  `ainnotations` skill — the user draws on the page, the notes land in
+  `annotations.md`, you apply them. Narrate it as the method it is: their
+  annotations are acceptance feedback, and the annotate → apply → check
+  loop is a review cycle they are running, not receiving.
 
 One teaching interruption per session across the whole stack — reformulation,
 lesson offer, or ledger question, whichever came first. The same budget rule

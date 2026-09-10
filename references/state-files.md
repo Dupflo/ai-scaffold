@@ -61,6 +61,8 @@ stack:
   - tech: method    # always present: AI-driven project management is a
     level: 0        # competency like the others — spec-first, stories,
     why: "Piloting the agent is the skill that outlives this project"
+tools:
+  ainnotations: true   # offered once at onboarding; true, or false = never re-offer
 ---
 
 ## PRD (one page)
