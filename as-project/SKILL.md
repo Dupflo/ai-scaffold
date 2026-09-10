@@ -33,9 +33,13 @@ what it must do, what is explicitly out. At level 0 in method, don't say
 together, then name it: *this is what the industry calls a PRD*. Vocabulary
 lands after the thing it names, never before.
 
-If the repo already has code, read it first (structure, package manifests)
-— the stack may already be chosen, and the audit-style question "why this?"
-belongs to `/ledger-audit`, not here.
+Before asking anything, read what the repo already says: code (structure,
+package manifests), and just as importantly the documents — a README, a
+brief, a quote, meeting notes. A client project often arrives with its
+scope, stack and deadlines already fixed on paper; onboarding grounded in
+those documents asks about what's open, not about what's signed. The
+audit-style question "why this?" on existing choices belongs to
+`/ledger-audit`, not here.
 
 ## 2. The stack: propose, don't enumerate
 
@@ -109,7 +113,26 @@ under `tools:` in `project.md`. On no: record the no, never re-offer.
 Like the ledger: optional, independent package, checked at runtime —
 ai-scaffold works fine without it.
 
-## 6. Close
+## 6. Wire the persistence — the plugin owns its own CLAUDE.md block
+
+Contextual loading of `as-mentor` is best effort; the project's `CLAUDE.md`
+is what makes it reliable across every future session. **Write it yourself**
+at onboarding (append to an existing file, create it otherwise) — never ask
+the user to do it, and never duplicate a block that's already there:
+
+```markdown
+## ai-scaffold
+The developer is learning through this project. Before any task that
+writes, changes or explains code, load the as-mentor skill and follow it.
+Levels and curriculum live in .scaffold/. Speak the user's language.
+<one line per hard fact found in the project documents: fixed stack,
+deadline, confidentiality — with the source file named>
+```
+
+If decision-ledger is installed, append its standard block too (the one
+`/ledger` offers), so the user never has to be asked twice.
+
+## 7. Close
 
 Write the three files, then say two things only: which milestone is `current`,
 and that `/as-lesson` starts it. If `.scaffold/` is being created in a repo
