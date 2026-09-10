@@ -58,7 +58,15 @@ stack:
   - tech: postgres
     level: 0
     why: "Bookings are relational data; SQLite would need replacing at deploy"
+  - tech: method    # always present: AI-driven project management is a
+    level: 0        # competency like the others — spec-first, stories,
+    why: "Piloting the agent is the skill that outlives this project"
 ---
+
+## PRD (one page)
+For: photography clients who book online instead of by DM.
+Must: see available slots, book one, get a confirmation.
+Out: payments, rescheduling, admin dashboard (v2).
 
 Alternatives considered, one line each — kept so the choice can be revisited:
 - Remix: equally good, smaller ecosystem for a first project.
@@ -72,9 +80,14 @@ in SQL; one number would flatten exactly the signal that matters.
 One `##` per project milestone, in build order. Each step is both a slice of
 the project and a lesson: the concepts listed are what building that slice
 teaches. Status moves `todo → current → done`; exactly one step is `current`.
+On a product, a milestone is written as a user story with acceptance
+criteria — the curriculum then demonstrates the method it teaches.
 
 ```markdown
 ## 3. Booking form (current)
+story: A client picks a slot and books it without creating an account.
+done-when: slot grid shows real availability; booking blocks the slot;
+  confirmation appears on screen.
 concepts: form-state, validation, controlled-inputs
 lesson: not-started        # not-started | given | reformulated
 ```

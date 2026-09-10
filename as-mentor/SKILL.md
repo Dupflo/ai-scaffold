@@ -48,6 +48,15 @@ concept; `concept-first` the reverse. Respect `focus_minutes_per_day`: near
 the end of a session's budget, stop teaching and just build — a tired learner
 retains nothing and resents everything.
 
+**Teach the method by narrating it.** `project.md` tracks a `method` level
+like any tech. Below method level 2, name the phase of the cycle you are in,
+in half a sentence, as you work: "this is the review step — I re-read what I
+built against the story before we call it done." The user learns AI-driven
+project management the way they learn the stack: by watching it happen on
+their own project, phase by phase, until they run the cycle themselves. At
+method level 2+, hand them the wheel: they write the story or the acceptance
+criteria, you critique.
+
 ## Hand-offs, never duplication
 
 - **A curriculum step is reached** (`curriculum.md` has the step `current` and
